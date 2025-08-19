@@ -4,7 +4,7 @@ import Home from "./assets/home";
 import About from "./assets/About";
 import Contact from "./assets/Contact";
 import NavBar from "./NavBar";
-
+import NotFound from "./NotFound";
 export default function App() {
   return (
     <Router>
@@ -13,6 +13,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
