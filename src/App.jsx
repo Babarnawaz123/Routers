@@ -21,7 +21,8 @@ export default function App() {
             <Route path="profile" element={<Profile />} />
             <Route path="settings" element={<Settings />} />
           </Route>
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />{" "}
+          {/*it will always used at the last to not disturb other routes */}
         </Routes>
       </Router>
     </div>
